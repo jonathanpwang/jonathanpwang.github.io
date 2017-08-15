@@ -1,0 +1,108 @@
+<head>
+<title>Topics in Calculus and Algebra, Lent 2012</title>
+<link href="../style.css" rel="stylesheet" type="text/css" media="screen" />
+
+<!--Google analytics-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32492182-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!--Mathjax-->
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+</head>
+
+<body>
+<h3>Topics in Calculus and Algebra, Course Notes</h3>
+
+<p>This course was taught at University of Cambridge in the Lent term of 2012 by Professor I. Grojnowski. Scanned lecture notes here (<a href="Grojnowski-Wang-Topics.in.calculus.and.algebra.pdf">.pdf</a>). Below are just some comments/general thoughts of mine about the course.</p>
+
+<b>Overview:</b>
+<ul>
+	<li><b>Lecture 1</b> (1/19/12) [p.1] </br>
+	Going to be working toward's Lurie's theorem on TFTs. Reference: <a href="http://www.math.harvard.edu/~lurie/papers/cobordism.pdf">J. Lurie, On the classification of topological field theories</a>. 
+	This paper will act as a guide throughout the course.
+	</li>
+
+	<li><b>Lectures 2-4</b> (1/24, 1/26, 1/31/12) [p.5, 8, 11] </br>
+	Introduction to simplicial sets, model categories, homotopy theory, etc. This is all covered in <a href="http://www.math.northwestern.edu/~pgoerss/papers/ucnotes.pdf">P. Goerss, K. Schemmerhorn, Model categories and simplicial methods</a>. </li>
+
+	<li><b>Lecture 5</b> (2/2/12) [p.14] </br>
+	Localization of model categories. </li>
+
+	<li><b>Lectures 6-7</b> (2/7, 2/9/12) [p.17, 20] </br>
+	Overview of Rezk's model for \((\infty, n)\)-categories as 
+	\(\Theta_n\)-spaces. Reference: for a nice introduction, see Rezk's 
+	<a href="http://www.math.uiuc.edu/~rezk/northwestern-2009-n-cat-handout.pdf">lecture slides</a>.
+	The actual paper is <a href="http://arxiv.org/abs/0901.3602v3">C. Rezk, A cartesian presentation of weak n-categories</a>. 
+	In his paper, Lurie uses a different model due to Barwick (which has been shown to be equivalent: see <a href="http://arxiv.org/abs/1112.0040v1">here</a>). 
+	Point of confusion for me: there isn't a single agreed upon definition of an \( (\infty,n) \)-category for \( n\gt 1 \)! (See <a href="http://ncatlab.org/nlab/show/%28infinity%2Cn%29-category">nLab</a> for clarification.) </li>
+
+	<li><b>Lecture 8</b> (2/16/12) [p.24]</br>
+	Vague statement of Lurie's theorem in higher categorical language. </li>
+
+	<li><b>Lectures 9-11</b> (2/21, 2/23, 2/28/12) [p.27, 30, 33]</br>
+	Geometric realization of "globular/cellular spaces" 
+	\( \lvert \cdot \rvert : \mathrm{sPSh}(\Theta_n) \to \mathrm{Sp}\). Three proof sketches:
+	<ol>
+		<li>Explicit combinatorial construction using trees. <a href="http://math.unice.fr/~cberger/nerve.pdf">C. Berger, A cellular nerve for higher categories</a>. Paper looks long and hard to read...
+		</li>
+
+		<li>Wreath product and suspension. Proposition 3.9 of <a href="http://math.unice.fr/~cberger/wreath.pdf">C. Berger, Iterated wreath product of the simplex category and iterated loop spaces</a>. 
+		</li>
+		
+		<li>
+		Realization as the simplicial nerve of subobject-posets via the flat 
+		pregeometric Reedy category structure of \(\Theta_n\). 
+		First paragraph and Proposition 3.14 on p.257 of <a href="http://math.unice.fr/~cberger/wreath.pdf">ibid</a>.
+		</li>
+	</ol>
+	</li>
+
+	<li><b>Lecture 12</b> (3/1/12) [p.35]  </br> 
+	Reduced \(\Theta_n\)-spaces as a model for \(n\)-fold loop spaces: the main result 
+	(Theorem 4.5) of <a href="http://math.unice.fr/~cberger/wreath.pdf">ibid</a>. 
+	This was traditionally formulated using the little cubes operad, as a theorem of Boardman-Vogt, May, Segal. For \(n=1\), see <a href="http://ncatlab.org/nlab/files/SegalCategoriesAndCohomologyTheories.pdf">G. Segal, Categories and cohomology theories</a>.
+	</li>
+
+	<li><b>Lecture 13</b> (3/6/12) [p.39] </br>
+	Desired/expected generalized model for loop spaces: Quillen adjoint functors 
+	\[ B^d : E_{d+d'}\textrm{-monoidal }\Theta_n\textrm{-Sp}_*^{Rezk} \rightleftarrows 
+	E_{d'}\textrm{-monoidal }\Theta_n\textrm{-Sp}_*^{Rezk} : \Omega_E^d \]
+	along with adjoint functors \(\Sigma^d, \Omega^d\) between appropriate simplicial presheaves 
+	[not yet in literature?]. 
+	</br>
+	</li>
+
+	<li> 
+	Stable model structure for spectra: <a href="http://club.pdmi.ras.ru/~topology/books/bousfield-friedlander.pdf">A. K. Bousfield, E. M. Friedlander, Homotopy theory of \(\Gamma\)-spaces, spectra, and bisimplicial sets</a>. Infinite loop spaces (\(n=0, d=\infty\))
+	via spectra and \(\Gamma\)-spaces, due to
+	Segal. This is all summarized in Berger's 
+	<a href="http://math.unice.fr/~cberger/wreath.pdf">paper</a>!
+	</li>
+
+	<li><b>Lecture 14</b> (3/8/12) [p.41] </br>
+	Homotopy type of little disks/cubes operad. See <a href="http://arxiv.org/abs/1202.2806">D. Ayala, R. Hepworth, Configurations spaces and \(\Theta_n\)</a>. 
+	<!--you can get a cell decomp from generalized cell decomp always (I think); just that the poset that Getzler-Jones first came up with didn't satisfy the cell decomp conditions?-->
+	</li>
+
+	<li><b>Lecture 15</b> (3/13/12) [p.45] </br>
+	Ran space, factorizable cosheaves, loop Grassmannian: summary/preview of things going on in Gaitsgory's <a href="http://math.harvard.edu/~gaitsgde/grad_2009/">seminar</a>. 
+	</li> 
+</ul>
+	
+
+</body>
+</html>
