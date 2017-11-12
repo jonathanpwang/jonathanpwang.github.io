@@ -99,10 +99,8 @@ nav a {
     text-transform: uppercase;
 }
 
-#about {
-    padding-left: 0;
-}
-
-#mypicture {
-    float: right;
+.intro {
+    font-size: 110%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
