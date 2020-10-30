@@ -111,3 +111,11 @@ nav a {
     padding-top: 2%;
     padding-bottom: 2%;
 }
+
+#sphL {
+    color: black;
+    outline: 0;
+    text-decoration: none;
+    display: none;
+}
+
