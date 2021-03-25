@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <title>Jonathan Wang | Examples of Relative Duality</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../style.css" rel="stylesheet">
+
+    <!--Mathjax-->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Jonathan Wang</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/research.html">Research</a></li>
+            <li><a href="/exposition.html">Exposition</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+    <h1 id="exposition">Examples of Relative Duality</h1>
+    
+    <p>
+    Ben-Zvi&mdash;Sakellaridis&mdash;Venkatesh have formulated a conjectural duality between certain classes of Hamiltonion varieties which predict number theoretic phenomena related to automorphic period integrals and \(L\)-functions and also reflect certain boundary theories arising in physics. <br/>
+    </p>
+    
+    <p>
+    In an attempt to understand their general theory, I am compiling a list of known examples of this duality. The following table lists a \(G\)-Hamiltonian variety \(M\) and its relative dual \(\check G\)-Hamiltonian variety \(\check M\). Since this is a duality, anything that appears as \(M, \check M\) in the table should also appear as \(\check M, M\), but I will sometimes list both entries to highlight the associated period integral. 
+For now, \(G,\check G\) will both be split reductive groups.
+    </p>
+
+    <p>
+    I am not an expert on period integrals, so please email me if you would like to suggest new entries or changes to this table! And please let me know if there are errors.
+    </p>
+    
+    <table>
+    <tr>
+        <th scope="col">\(M\)</th>
+        <th scope="col">\(G\)</th>
+        <th scope="col">\(\check M\)</th>
+        <th scope="col">\(\check G\)</th>
+        <th scope="col">Name</th>
+    </tr>
+    <tr>
+        <td>\(T^* H\)</td>
+        <td>\(H \times H\)</td>
+        <td>\(T^* (\check H\times \check H/ \check H^{\iota\mathrm{-diag}}) \), \(\iota\) is Chevalley involution</td>
+        <td>\(\check H \times \check H\)</td>
+        <td>Petersson inner product, Harish-Chandra Plancherel
+        </td>
+    </tr>
+    <tr>
+        <td>\(T^*G/(N,\psi) \)</td>
+        <td>\(G\)</td>
+        <td>pt</td>
+        <td>\(\check G\)</td>
+        <td>Whittaker</td>
+    </tr>
+    <tr>
+        <td>\(T^* \mathfrak{gl}_n \)</td>
+        <td>\(\mathrm{GL}_n \times \mathrm{GL}_n\)</td>
+        <td>\(T^*( \mathrm{GL}_n \times \mathbb A^n )\)</td>
+        <td>\( \mathrm{GL}_n \times \mathrm{GL}_n \)</td>
+        <td>Tate's thesis (\(n=1\)), Godement&mdash;Jacquet</td>
+    </tr>
+    <tr>
+        <td>\(T^*( \mathrm{GL}_n \times \mathbb A^n )\)</td>
+        <td>\( \mathrm{GL}_n \times \mathrm{GL}_n \)</td>
+        <td>\(T^* \mathfrak{gl}_n \) or \(T^*(\mathsf{std}\otimes \mathsf{std})\)</td>
+        <td>\(\mathrm{GL}_n \times \mathrm{GL}_n\)</td>
+        <td>Rankin&mdash;Selberg (\(n=2\)), Jacquet&mdash;Piatetski-Shapiro&mdash;Shalika</td>
+    </tr>
+    <tr>
+        <td>\(T^* (\mathrm{GL}_n \times \mathrm{GL}_{n-1} / \mathrm{GL}_{n-1})  \)</td>
+        <td>\( \mathrm{GL}_n \times \mathrm{GL}_{n-1} \)</td>
+        <td>\(T^*(\mathsf{std}\otimes \mathsf{std})\)</td>
+        <td>\(\mathrm{GL}_n \times \mathrm{GL}_{n-1}\)</td>
+        <td>Hecke (\(n=2\)), Jacquet&mdash;Piatetski-Shapiro&mdash;Shalika</td>
+    </tr>
+    <tr>
+        <td>\(T^*( G/U  )\)</td>
+        <td>\( G \times T  \)</td>
+        <td>\(T^*(\check G/ \check U) \)</td>
+        <td>\(\check G\times \check T \)</td>
+        <td>Eisenstein series (?)</td>
+    </tr>
+
+    <tr>
+        <td>\(T^*( \overline{G/U} )\)</td>
+        <td>\( G \)</td>
+        <td>\(T^*( \check G/ \check T) \)</td>
+        <td>\(\check G\)</td>
+        <td>Compactified/normalized Eisenstein series</td>
+    </tr>
+   
+    <tr>
+        <td>\(T^*( \mathrm{PGL}_2^{\times 3} / \mathrm{PGL}_2^{\mathrm{diag}} )\)</td>
+        <td>\( \mathrm{PGL}_2^{\times 3}\)</td>
+        <td>\( \mathsf{std} \otimes \mathsf{std} \otimes \mathsf{std} \)</td>
+        <td>\(\mathrm{SL}_2^{\times 3}\)</td>
+        <td>Jacquet, Kudla&mdash;Harris, Ichino, others</td>
+    </tr>
+
+    <tr>
+        <td>\( T^*(\mathrm{SO}_{2n} \times \mathrm{SO}_{2n-1} / \mathrm{SO}_{2n-1}) \)</td>
+        <td>\( \mathrm{SO}_{2n} \times \mathrm{SO}_{2n-1} \)</td>
+        <td>\( \mathsf{std} \otimes \mathsf{std} \)</td>
+        <td>\(\mathrm{Sp}_{2n} \times \mathrm{SO}_{2n}\)</td>
+        <td>Gan&mdash;Gross&mdash;Prasad</td>
+    </tr>
+
+    <tr>
+        <td>\( \mathsf{std} \otimes \mathsf{std} \)</td>
+        <td>\(\mathrm{Sp}_{2n} \times \mathrm{SO}_{2n}\)</td>
+        <td>\( T^*(\mathrm{SO}_{2n} \times \mathrm{SO}_{2n-1} / \mathrm{SO}_{2n-1}) \)</td>
+        <td>\( \mathrm{SO}_{2n} \times \mathrm{SO}_{2n-1} \)</td>
+        <td>Theta correspondence</td>
+    </tr>
+
+    <tr>
+        <td>\( T^*(\mathrm{GL}_{2n} / (\mathrm{GL}_n \times \mathrm{GL}_n )) \) </td>
+        <td>\(\mathrm{GL}_{2n} \)</td>
+        <td>\( T^*((\mathrm{GL}_{2n} / \mathrm{Sp}_{2n}) \times \mathsf{std}) \)</td>
+        <td>\( \mathrm{GL}_{2n} \)</td>
+        <td>Friedberg&mdash;Jacquet (Linear period)</td>
+    </tr>
+
+    <tr>
+        <td>\( T^*(\mathrm{GL}_{2n} / \mathrm{GL}_n^{\mathrm{diag}} (U,\psi) ) \), \(U=\mathfrak{gl}_n\); Shalika model</td>
+        <td>\(\mathrm{GL}_{2n} \)</td>
+        <td>\( T^*(\mathrm{GL}_{2n} / \mathrm{Sp}_{2n}) \)</td>
+        <td>\( \mathrm{GL}_{2n} \)</td>
+        <td>Jacquet&mdash;Shalika</td>
+    </tr>
+    </table>
+
+    <table>
+    <tr>
+        <td>\( T^*( \mathrm{SO}_{2n+1}/ \mathrm{SO}_{2n}) \)</td>
+        <td>\( \mathrm{SO}_{2n+1} \)</td>
+        <td>\( \mathrm{Sp}_{2n} \times^{\mathrm{SL}_2} (\mathsf{std}_2[\frac 3 2 - n] \oplus \mathsf{std}_2[\frac 1 2] \oplus \mathsf{triv}[-1,-3,\dotsc,3-2n])  \)</td>
+        <td>\( \mathrm{Sp}_{2n} \)</td>
+        <td>Sakellaridis</td>
+    </tr>
+
+    </table>
+
+    </div><!-- /.container -->
+
+
+    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+        var sc_project=11060507;
+        var sc_invisible=1;
+        var sc_security="9722a6b0";
+        var scJsHost = (("https:" == document.location.protocol) ?
+        "https://secure." : "http://www.");
+        document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+        "statcounter.com/counter/counter.js'></"+"script>");
+    </script>
+    <noscript><div class="statcounter"><a title="web statistics"
+        href="http://statcounter.com/free-web-stats/" target="_blank"><img
+        class="statcounter" src="//c.statcounter.com/11060507/0/9722a6b0/1/"
+        alt="web statistics"></a></div>
+    </noscript>
+    <!-- End of StatCounter Code for Default Guide -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
