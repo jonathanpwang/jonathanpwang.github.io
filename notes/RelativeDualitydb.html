@@ -40,9 +40,9 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="/index.html">Home</a></li>
             <li><a href="/research.html">Research</a></li>
-            <li><a href="/exposition.html">Exposition</a></li>
+            <li><a href="/talks.html">Talks</a></li>
+            <li><a href="/exposition.html">Notes</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -98,23 +98,65 @@ For now, \(G,\check G\) will both be split reductive groups.
     <tr>
         <td>\(T^*( \mathrm{GL}_n \times \mathbb A^n )\)</td>
         <td>\( \mathrm{GL}_n \times \mathrm{GL}_n \)</td>
-        <td>\(T^* \mathfrak{gl}_n \) or \(T^*(\mathsf{std}\otimes \mathsf{std})\)</td>
+        <td>\(T^* \mathfrak{gl}_n \) or \(T^*(\mathrm{std}\otimes \mathrm{std})\)</td>
         <td>\(\mathrm{GL}_n \times \mathrm{GL}_n\)</td>
         <td>Rankin&mdash;Selberg (\(n=2\)), Jacquet&mdash;Piatetski-Shapiro&mdash;Shalika</td>
     </tr>
     <tr>
         <td>\(T^* (\mathrm{GL}_n \times \mathrm{GL}_{n-1} / \mathrm{GL}_{n-1})  \)</td>
         <td>\( \mathrm{GL}_n \times \mathrm{GL}_{n-1} \)</td>
-        <td>\(T^*(\mathsf{std}\otimes \mathsf{std})\)</td>
+        <td>\(T^*(\mathrm{std}\otimes \mathrm{std})\)</td>
         <td>\(\mathrm{GL}_n \times \mathrm{GL}_{n-1}\)</td>
         <td>Hecke (\(n=2\)), Jacquet&mdash;Piatetski-Shapiro&mdash;Shalika</td>
     </tr>
+
+
+    <tr>
+        <td>\(T^*( \mathrm{PGL}_2^{\times 3} / \mathrm{PGL}_2^{\mathrm{diag}} )\)</td>
+        <td>\( \mathrm{PGL}_2^{\times 3}\)</td>
+        <td>\( \mathrm{std} \otimes \mathrm{std} \otimes \mathrm{std} \)</td>
+        <td>\(\mathrm{SL}_2^{\times 3}\)</td>
+        <td>Jacquet, Kudla&mdash;Harris, Ichino, others</td>
+    </tr>
+
+    <tr>
+        <td>\( T^*(\mathrm{SO}_{2n} \times \mathrm{SO}_{2n+1} / \mathrm{SO}_{2n}) \)</td>
+        <td>\( \mathrm{SO}_{2n} \times \mathrm{SO}_{2n+1} \)</td>
+        <td>\( \mathrm{std} \otimes \mathrm{std} \)</td>
+        <td>\(\mathrm{SO}_{2n}\times \mathrm{Sp}_{2n}\)</td>
+        <td>Gan&mdash;Gross&mdash;Prasad</td>
+    </tr>
+
+    <tr>
+        <td>\( \mathrm{std} \otimes \mathrm{std} \)</td>
+        <td>\(\mathrm{SO}_{2n} \times \mathrm{Sp}_{2n}\)</td>
+        <td>\( T^*(\mathrm{SO}_{2n} \times \mathrm{SO}_{2n+1} / \mathrm{SO}_{2n}) \)</td>
+        <td>\( \mathrm{SO}_{2n} \times \mathrm{SO}_{2n+1} \)</td>
+        <td>Theta correspondence</td>
+    </tr>
+
+    <tr>
+        <td>\( T^*(\mathrm{GL}_{2n} / (\mathrm{GL}_n \times \mathrm{GL}_n )) \) </td>
+        <td>\(\mathrm{GL}_{2n} \)</td>
+        <td>\( T^*((\mathrm{GL}_{2n} / \mathrm{Sp}_{2n}) \times \mathrm{std}) \)</td>
+        <td>\( \mathrm{GL}_{2n} \)</td>
+        <td>Friedberg&mdash;Jacquet (Linear period)</td>
+    </tr>
+
+    <tr>
+        <td>\( T^*(\mathrm{GL}_{2n} / \mathrm{GL}_n^{\mathrm{diag}} (U,\psi) ) \), \(U=\mathfrak{gl}_n\); Shalika model</td>
+        <td>\(\mathrm{GL}_{2n} \)</td>
+        <td>\( T^*(\mathrm{GL}_{2n} / \mathrm{Sp}_{2n}) \)<br/><b>not tempered</b></td>
+        <td>\( \mathrm{GL}_{2n} \)</td>
+        <td>Jacquet&mdash;Shalika</td>
+    </tr>
+
     <tr>
         <td>\(T^*( G/U  )\)</td>
         <td>\( G \times T  \)</td>
         <td>\(T^*(\check G/ \check U) \)</td>
         <td>\(\check G\times \check T \)</td>
-        <td>Eisenstein series (?)</td>
+        <td>Eisenstein series</td>
     </tr>
 
     <tr>
@@ -134,45 +176,6 @@ For now, \(G,\check G\) will both be split reductive groups.
     </tr>
 
    
-    <tr>
-        <td>\(T^*( \mathrm{PGL}_2^{\times 3} / \mathrm{PGL}_2^{\mathrm{diag}} )\)</td>
-        <td>\( \mathrm{PGL}_2^{\times 3}\)</td>
-        <td>\( \mathsf{std} \otimes \mathsf{std} \otimes \mathsf{std} \)</td>
-        <td>\(\mathrm{SL}_2^{\times 3}\)</td>
-        <td>Jacquet, Kudla&mdash;Harris, Ichino, others</td>
-    </tr>
-
-    <tr>
-        <td>\( T^*(\mathrm{SO}_{2n} \times \mathrm{SO}_{2n-1} / \mathrm{SO}_{2n-1}) \)</td>
-        <td>\( \mathrm{SO}_{2n} \times \mathrm{SO}_{2n-1} \)</td>
-        <td>\( \mathsf{std} \otimes \mathsf{std} \)</td>
-        <td>\(\mathrm{Sp}_{2n} \times \mathrm{SO}_{2n}\)</td>
-        <td>Gan&mdash;Gross&mdash;Prasad</td>
-    </tr>
-
-    <tr>
-        <td>\( \mathsf{std} \otimes \mathsf{std} \)</td>
-        <td>\(\mathrm{Sp}_{2n} \times \mathrm{SO}_{2n}\)</td>
-        <td>\( T^*(\mathrm{SO}_{2n} \times \mathrm{SO}_{2n-1} / \mathrm{SO}_{2n-1}) \)</td>
-        <td>\( \mathrm{SO}_{2n} \times \mathrm{SO}_{2n-1} \)</td>
-        <td>Theta correspondence</td>
-    </tr>
-
-    <tr>
-        <td>\( T^*(\mathrm{GL}_{2n} / (\mathrm{GL}_n \times \mathrm{GL}_n )) \) </td>
-        <td>\(\mathrm{GL}_{2n} \)</td>
-        <td>\( T^*((\mathrm{GL}_{2n} / \mathrm{Sp}_{2n}) \times \mathsf{std}) \)</td>
-        <td>\( \mathrm{GL}_{2n} \)</td>
-        <td>Friedberg&mdash;Jacquet (Linear period)</td>
-    </tr>
-
-    <tr>
-        <td>\( T^*(\mathrm{GL}_{2n} / \mathrm{GL}_n^{\mathrm{diag}} (U,\psi) ) \), \(U=\mathfrak{gl}_n\); Shalika model</td>
-        <td>\(\mathrm{GL}_{2n} \)</td>
-        <td>\( T^*(\mathrm{GL}_{2n} / \mathrm{Sp}_{2n}) \)<br/><b>not tempered</b></td>
-        <td>\( \mathrm{GL}_{2n} \)</td>
-        <td>Jacquet&mdash;Shalika</td>
-    </tr>
 
     <tr>
         <td>\( T^* M_\rho \) <br/> \(M_\rho\) is <i>L</i>-monoid</td>
@@ -188,9 +191,9 @@ For now, \(G,\check G\) will both be split reductive groups.
     <tr>
         <td>\( T^*( \mathrm{SO}_{2n+1}/ \mathrm{SO}_{2n}) \)</td>
         <td>\( \mathrm{SO}_{2n+1} \)</td>
-        <td>\( \mathrm{Sp}_{2n} \times^{\mathrm{SL}_2} (\mathsf{std}_2[\frac 3 2 - n] \oplus \mathsf{std}_2[\frac 1 2] \oplus \mathsf{triv}[-1,-3,\dotsc,3-2n])  \)</td>
+        <td>\( \mathrm{Sp}_{2n} \times^{\mathrm{SL}_2} (\mathrm{std}_2[\frac 3 2 - n] \oplus \mathrm{std}_2[\frac 1 2] \oplus \mathrm{triv}[-1,-3,\dotsc,3-2n])  \)</td>
         <td>\( \mathrm{Sp}_{2n} \)</td>
-        <td>Sakellaridis</td>
+        <td>Sakellaridis<br/> Gan&mdash;Wan</td>
     </tr>
 
     </table>
